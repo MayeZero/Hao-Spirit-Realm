@@ -32,6 +32,9 @@ function ScrollBackground() {
   const objectsDistance = 7
 
   const cameraGroup = useRef()
+  const dodeRef= useRef()
+  const boxRef = useRef()
+  const octaRef = useRef();
   const torusRef = useRef()
   const coneRef = useRef()
   const torusKnotRef = useRef()
@@ -55,6 +58,12 @@ function ScrollBackground() {
       const elapsedTime = clock.getElapsedTime()
       const deltaTime = elapsedTime - previousTime
       previousTime = elapsedTime
+      dodeRef.current.rotation.x += 0.001
+      dodeRef.current.rotation.y += 0.0012
+      boxRef.current.rotation.x += 0.001
+      boxRef.current.rotation.y += 0.0012
+      octaRef.current.rotation.x += 0.001
+      octaRef.current.rotation.y += 0.0012
       torusRef.current.rotation.x += 0.001
       torusRef.current.rotation.y += 0.0012
       coneRef.current.rotation.x += 0.001
@@ -108,21 +117,33 @@ function ScrollBackground() {
       </group>
 
       <directionalLight color="#ffffff" intensity={3} position={[5, 5, 5]}/>
-      <mesh ref={torusRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 0}> 
+      <mesh ref={dodeRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 0}>
+        <dodecahedronGeometry args={[1]} />
+        <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/>
+      </mesh>
+      <mesh ref={boxRef} rotation={[0.5, 0.5, 0]} position-x = {-2} position-y = {topDistance - objectsDistance * 1}>
+        <boxGeometry args={[1.5, 1.5, 1.5]} />
+        <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/>
+      </mesh>
+      <mesh ref={octaRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 2}>
+        <octahedronGeometry args={[1, 0]} />
+        <meshStandardMaterial color={parameters.materialColor} gradientMap={gradientTexture}/>
+      </mesh>
+        <mesh ref={sphereRef} rotation={[0.5, 0.5, 0]} position-x = {-2} position-y = {topDistance - objectsDistance * 3}>
+        <sphereGeometry args={[0.6, 32, 32]} />
+        <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/>
+      </mesh>
+      <mesh ref={torusRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 4}> 
         <torusGeometry args={[1, 0.4, 16, 100]} /> 
         <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/> 
       </mesh>
-      <mesh ref={coneRef} rotation={[0.5, 0.5, 0]} position-x = {-2} position-y = {topDistance - objectsDistance * 1}>
+      <mesh ref={coneRef} rotation={[0.5, 0.5, 0]} position-x = {-2} position-y = {topDistance - objectsDistance * 5}>
         <coneGeometry args={[1, 2, 32]}/>
         <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/> 
       </mesh>
-      <mesh ref={torusKnotRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 2}>
+      <mesh ref={torusKnotRef} rotation={[0.5, 0.5, 0]} position-x = {2} position-y = {topDistance - objectsDistance * 6}>
         <torusKnotGeometry args={[0.8, 0.35, 100, 16]}/>
         <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/> 
-      </mesh>
-      <mesh ref={sphereRef} rotation={[0.5, 0.5, 0]} position-x = {-2} position-y = {topDistance - objectsDistance * 3}>
-        <sphereGeometry args={[0.6, 32, 32]} />
-        <meshToonMaterial color={parameters.materialColor} gradientMap={gradientTexture}/>
       </mesh>
     </>
   );
@@ -187,6 +208,68 @@ export default function CanvasBackgound() {
 
       <section className="section">
         <Card
+          to="/robot"
+          title="AR Based Robot Teleoperation System"
+          text="By leveraging mobile AR, we aim to provide an accessible and low-friction interface for teleoperation, supporting both non-expert users and collaborative robotic systems in dynamic real-world environments."
+        >
+          <img 
+            className="cardContent"
+            src={"/pictures/Franka3/WelcomePage.png"} 
+            alt="Project 1 Image" 
+           />
+        </Card>
+      </section>
+
+      <section className="section">
+        <Card
+          to="/ds"
+          title="Distributed Systems and Applications"
+          text="The projects effectively demonstrate core concepts of distributed systems in a practical and user-friendly environment, striking a balance between functionality and performance."
+        >
+          <img 
+            className="cardContent"
+            src={"/pictures/DS/WhiteBoard.png"} 
+            alt="Project 2 Image" 
+           />
+        </Card>
+      </section>
+
+      <section className="section">
+        <Card
+          to="/dh"
+          title="Teleskin"
+          text="By adopting the FHIR standard to ensure interoperability, and combining
+          AI analysis with clinical judgment, the platform will provide efficient, safe, and sustainable
+          dermatological care."
+        >
+           <video 
+            className="cardContent" 
+            src={"/pictures/DH/Prototype-Video.mp4"} 
+            alt="Project 2 Video" 
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </Card>
+      </section>
+
+      <section className="section">
+        <Card
+          to="/pinball"
+          title="Pinball Arcade"
+          text="Pinball Arcade recreates the classic pinball game through sensors and multiplayer modes."
+        >
+          <img 
+            className="cardContent" 
+            src={"/pictures/PinballArcade/MainGame.png"} 
+            alt="Project 4 Image"
+          />
+        </Card>
+      </section>
+
+      <section className="section">
+        <Card
           to="/pufferfish"
           title="Pufferfish Prototypes and Scenarios"
           text="Creating Pufferfish Prototypes and Scenarios Using Pneumatic Devices and 3D Printing Technology: Helping People Feel the Impact of the Anthropocene on Nature"
@@ -227,20 +310,6 @@ export default function CanvasBackgound() {
             className="cardContent" 
             src={"/pictures/QueenVictoriaMarket/AIpersona.png"} 
             alt="Project 3 Image" 
-          />
-        </Card>
-      </section>
-
-      <section className="section">
-        <Card
-          to="/pinball"
-          title="Pinball Arcade"
-          text="Pinball Arcade recreates the classic pinball game through sensors and multiplayer modes."
-        >
-          <img 
-            className="cardContent" 
-            src={"/pictures/PinballArcade/MainGame.png"} 
-            alt="Project 4 Image"
           />
         </Card>
       </section>

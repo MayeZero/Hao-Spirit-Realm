@@ -310,13 +310,13 @@ export default function Social(){
                                     </div>
                             </div>
 
-                            {/* <div className="content-card">
+                            <div className="content-card">
                                 <iframe
                                     style={{ border: "1px solid rgba(0, 0, 0, 0.1)", width: "100%", height: "100%" }}
                                     src={"https://embed.figma.com/proto/DW9uBQU3uTHt7XpyfMvZbE/life-footprint-final?page-id=0%3A1&node-id=1-42&node-type=frame&viewport=1916%2C751%2C0.14&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A819&embed-host=share"}
                                     allowFullScreen
-                                />
-                            </div> */}
+                                    />
+                            </div>
                         </div> 
                         
                         {/* Sidebar */}

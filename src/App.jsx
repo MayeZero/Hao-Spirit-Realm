@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import CanvasBackground from './components/CanvasBackground/CanvasBackground'
+import Robot from "./pages/projects/robot/robot"
+import Ds from "./pages/projects/ds/ds"
+import Dh from "./pages/projects/dh/dh"
 import Pufferfish from './pages/projects/pufferfish/pufferfish'
 import Social from './pages/projects/social/social'
 import Queen from './pages/projects/queen/queen'
@@ -16,6 +19,21 @@ function App() {
         <Route path="/" element={
           <div className="App">
             <CanvasBackground />
+          </div>
+        } />
+        <Route path="/robot" element={
+          <div className="App">
+            <Robot />
+          </div>
+        } />
+        <Route path="/ds" element={
+          <div className="App">
+            <Ds />
+          </div>
+        } />
+        <Route path="/dh" element={
+          <div className="App">
+            <Dh />
           </div>
         } />
         <Route path="/pufferfish" element={
