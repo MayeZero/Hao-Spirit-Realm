@@ -1,0 +1,29 @@
+.BannerContainer{
+    display: flex;
+    /* border: 1px solid gray; */
+    text-align: center;
+    flex-direction: column;
+}
+
+.LinksContainer{
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-link{
+    background-color: black; 
+    color: white;
+    border: none; 
+}
+
+.linkedin-link{
+    background-color: black; 
+    color: white;
+    border: none; 
+}
+
+.backLinksContainer{
+    display: flex;
+    align-items: center;
+}

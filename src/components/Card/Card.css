@@ -1,0 +1,41 @@
+.card {
+  text-decoration: none;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 16px;
+  max-width: 640px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+/* .card:hover {
+  box-shadow: 0 10px 20px rgba(255, 229, 255, 0.5);
+} */
+
+.cardContent{
+  border-radius: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.cardContent:hover {
+  box-shadow: 0 10px 20px rgba(255, 229, 255, 0.5);
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #b0b0b0;
+  text-align: left;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  color: #b0b0b0;
+}

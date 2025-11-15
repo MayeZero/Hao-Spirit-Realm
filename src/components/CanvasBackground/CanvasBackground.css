@@ -1,0 +1,27 @@
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.section
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 6vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section:nth-child(even)
+{
+    justify-content: flex-end;
+}

@@ -1,0 +1,92 @@
+/* .projectcard {
+  background: black;
+  color: white;
+  padding: 24px;
+  border-radius: 8px;
+} */
+
+.projectcard {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .projectcard-container {
+    flex-direction: row;
+  }
+}
+
+/* LEFT SIDE */
+.projectcard-left {
+  flex: 1;
+}
+
+.projectcard-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.projectcard-subtitle {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.empty-space {
+  margin: 16px 0;
+  height: 120px;
+}
+
+/* GRID (ROLE / TEAM / DURATION / IMPACTS) */
+.projectcard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .projectcard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.projectcard-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.horizontal-line-project {
+  height: 1px;
+  width: 100%;
+  background: #666;
+}
+
+.projectcard-block {
+  margin-bottom: 8px;
+}
+
+.strong-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE: IMAGE */
+.projectcard-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.projectcard-image {
+  width: 100%;
+  height: auto;
+  border-radius: 36px;
+  object-fit: cover;
+}
+

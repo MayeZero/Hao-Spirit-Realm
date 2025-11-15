@@ -1,0 +1,64 @@
+.headerArea{
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    width: 100%;
+}
+
+.logoContainer{
+    /* border: 1px solid gray; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .blank1 {
+    width: 36px;
+    height: 36px;  */
+    /* background-color: lightgray; */
+/* } */
+
+/* .blank2 {
+    width: 160px;
+    height: 36px;  */
+    /* background-color: lightgray; */
+/* } */
+
+.musicPlayerContainer{
+    /* border: 1px solid gray; */
+    text-align: center;
+}
+
+.music-player-icon {
+    background-color: black; 
+    color: white;
+    border: none; 
+}
+
+.optionsContainer{
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+}
+
+.singleOption {
+  padding: 8px 16px;
+  background-color: black; /* 紫色类似 Vuetify */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.singleOption:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.singleOption:active {
+  transform: scale(0.96);
+}

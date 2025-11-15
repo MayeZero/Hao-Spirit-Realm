@@ -1,0 +1,66 @@
+.artSpace {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.toolbar-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-buttons a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav-buttons a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(578px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item img, 
+.gallery-item iframe {
+  width: 578px;
+  height: 778px;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.gallery-item iframe {
+  height: 800px;
+  border: 4px solid #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
