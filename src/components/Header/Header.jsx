@@ -20,9 +20,9 @@ export default function Header() {
 function Logo(){
   return(
     <div className="logoContainer">
-      {/* <div className="blank1"></div> */}
+      <div className="blank1"></div>
       <img src={logo} alt="logo" />
-      {/* <div className="blank2"></div> */}
+      <div className="blank2"></div>
     </div>
   )
 }

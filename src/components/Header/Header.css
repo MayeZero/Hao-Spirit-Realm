@@ -13,17 +13,17 @@
     flex-direction: row;
 }
 
-/* .blank1 {
+.blank1 {
     width: 36px;
-    height: 36px;  */
+    height: 36px;
     /* background-color: lightgray; */
-/* } */
+}
 
-/* .blank2 {
-    width: 160px;
-    height: 36px;  */
+.blank2 {
+    width: 320px;
+    height: 36px;
     /* background-color: lightgray; */
-/* } */
+}
 
 .musicPlayerContainer{
     /* border: 1px solid gray; */
