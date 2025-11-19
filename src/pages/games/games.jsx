@@ -34,10 +34,10 @@ export default function Games() {
                     src="/games/prototype-2/index.html"
                     style={{ width: "100%", height: "100vh", border: "none" }}
                 />
-                {/* <iframe
+                <iframe
                     src="/games/prototype-3/index.html"
                     style={{ width: "100%", height: "100vh", border: "none" }}
-                /> */}
+                />
                 <iframe
                     src="/games/prototype-4/index.html"
                     style={{ width: "100%", height: "100vh", border: "none" }}
@@ -47,7 +47,7 @@ export default function Games() {
                     style={{ width: "100%", height: "100vh", border: "none" }}
                 />
                 <iframe
-                    src="/games/BounceBall/index.html"
+                    src="/games/BounceBall/index.html" 
                     style={{ width: "100%", height: "100vh", border: "none" }}
                 />
                 <iframe
