@@ -10,7 +10,7 @@ export default function Blogs() {
     const [blogs, setBlogs] = useState([]);
 
     const getBlog = async () => {
-        const response = await fetch("http://localhost:5110/Blog/1"); // 注意这里拿所有博客
+        const response = await fetch("http://192.168.0.13:5110/Blog/1");
         const result = await response.json();
         setBlogs(result);
         console.log(result);
