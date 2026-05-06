@@ -4,3 +4,101 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (orientation: portrait) {
+  .App {
+    transform: scale(0.36);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .headerArea {
+    transform: scale(0.8) translateX(-100%);
+    position: relative;
+    left: 50%;
+  }
+}
+
+@media (orientation: portrait) {
+  .Robot {
+    transform: scale(0.30) translateX(-100%);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Ds {
+    transform: scale(0.30) translateX(-100%);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Dh {
+    transform: scale(0.30) translateX(-100%);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Pufferfish {
+    transform: scale(0.30);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Social {
+    transform: scale(0.30);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Queen {
+    transform: scale(0.30) translateX(-100%);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Pinball {
+    transform: scale(0.30) translateX(-100%);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Games {
+    transform: scale(0.30);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .Blogs {
+    transform: scale(0.30);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+@media (orientation: portrait) {
+  .ArtSpace {
+    transform: scale(0.30);
+    transform-origin: top center;
+    overflow: visible;
+  }
+}
+
+

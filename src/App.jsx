@@ -22,52 +22,52 @@ function App() {
           </div>
         } />
         <Route path="/robot" element={
-          <div className="App">
+          <div className="Robot">
             <Robot />
           </div>
         } />
         <Route path="/ds" element={
-          <div className="App">
+          <div className="Ds">
             <Ds />
           </div>
         } />
         <Route path="/dh" element={
-          <div className="App">
+          <div className="Dh">
             <Dh />
           </div>
         } />
         <Route path="/pufferfish" element={
-          <div className="App">
+          <div className="Pufferfish">
             <Pufferfish />
           </div>
         } />
         <Route path="/social" element={
-          <div className="App">
+          <div className="Social">
             <Social />
           </div>
         } />
         <Route path="/queen" element={
-          <div className="App">
+          <div className="Queen">
             <Queen />
           </div>
         } />
         <Route path="/pinball" element={
-          <div className="App">
+          <div className="Pinball">
             <Pinball />
           </div>
         } />
         <Route path="/games" element={
-          <div className="App">
+          <div className="Games">
             <Games />
           </div>
         } />
         <Route path="/blogs" element={
-          <div className="App">
+          <div className="Blogs">
             <Blogs />
           </div>
         } />
         <Route path="/artspace" element={
-          <div className="App">
+          <div className="ArtSpace">
             <ArtSpace />
           </div>
         } />

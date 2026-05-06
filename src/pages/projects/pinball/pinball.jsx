@@ -51,15 +51,15 @@ export default function Pinball(){
                                  </div>
                              </section>
                      
-                             <div id="overview" class="content-section">
+                             <div id="overview" className="content-section">
                                 <iframe 
                                     width="1200" 
                                     height="600" 
                                     src="https://www.youtube.com/embed/Lp3jr2XvRpg" 
                                     title="YouTube video player" 
-                                    frameborder="0" 
+                                    frameBorder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                    allowfullscreen>
+                                    allowFullScreen>
                                 </iframe>
                             </div>  
  

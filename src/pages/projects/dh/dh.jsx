@@ -62,8 +62,8 @@ export default function Pinball(){
                                     height="600" 
                                     src="https://www.youtube.com/embed/4WT58Kc5dhc?si=zgXRpFy3HstsPvc4" 
                                     title="YouTube video player" 
-                                    frameborder="0" 
-                                    allowfullscreen>
+                                    frameBorder="0" 
+                                    allowFullScreen>
                                 </iframe>
                             </div>  
  
